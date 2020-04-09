@@ -87,6 +87,8 @@
 }
 
 
+
+
 /* adjust the search bar on the LEFT SIDE
 ********************************************************************************************/
 .vertical-bar{
@@ -130,6 +132,21 @@
     border: 1px solid #000;
     border-radius: 50%; /* creates the circle around the social icons */
     cursor: pointer; /* creates the cursor when you hover over iconsc*/
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: inherit;
+}
+.social-icons a:hover{
+    color: aqua;
+}
+
+/* this is at full size screen width around 1,376 */
+@media (min-width: 86rem){
+    .social-icons .fa{
+        margin: 30px 23px;
+    }
 }
 
 /* NOTIFICATIONS
