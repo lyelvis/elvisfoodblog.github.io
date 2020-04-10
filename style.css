@@ -24,31 +24,34 @@
 
 .nav-links{
     flex: 1;
+    white-space: nowrap;
 }
 
 .nav-links ul{
     margin-left: 50px;
-    display: inline;
+    display: inline-block;
+    white-space: nowrap; /* causes the items not to wrap under*/
 }
 
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 25px;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .nav-links ul a{
     color: #ffffff;
     text-decoration: none;
-    font-size: 13px;
-
+    font-size: .8125em;
 }
 
 /* creates the yellow underscore on the nav links */
 .nav-links ul li::after{
     content: '';
     width: 0;
-    height: 2px;
+    height: 5px;
     background: yellow;
     display: block;
     margin: auto;
@@ -64,6 +67,7 @@
     background: yellow;
     font-weight: bold;
     cursor: pointer;
+    display: inline-block;
 }
 
 .nav-links .btn{
@@ -77,7 +81,7 @@
 }
 
 .banner-title h1{
-    font-size: 64px;
+    font-size: 4em;
     margin-bottom: 30px; /* creates the space between the h1 heading, and button 'EXPLORE'*/
 
 }
@@ -194,7 +198,7 @@
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 55.6rem){
     .vertical-bar{
         display: none;
     }
